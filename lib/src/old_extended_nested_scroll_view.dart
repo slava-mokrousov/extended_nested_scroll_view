@@ -1494,10 +1494,10 @@ class _NestedScrollPosition extends ScrollPosition
     return coordinator.jumpTo(coordinator.unnestOffset(value, this));
   }
 
-  // @override
-  // void pointerScroll(double delta) {
-  //   return coordinator.pointerScroll(delta);
-  // }
+  @override
+  void pointerScroll(double delta) {
+    return coordinator.pointerScroll(delta);
+  }
 
   @override
   void jumpToWithoutSettling(double value) {
